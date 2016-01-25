@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hello World!</title>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="js/server.js"></script>
+</head>
+
+<body>
+  <h1>Hello World!</h1> We are using node.js
+  <script>
+    document.write(process.version)
+  </script>.
+
+  <button id="btnStart">start server</button>
+
+  <textarea id="logs">
+  </textarea>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#btnStart').click(function(e) {
+        e.preventDefault();
+        startServer();
+      });
+    });
+  </script>
+</body>
+
+</html>
